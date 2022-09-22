@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200/", maxAge = 1800)
 @RequestMapping("/clinicappointments")
 public class ClinicAppointmentController {
 
