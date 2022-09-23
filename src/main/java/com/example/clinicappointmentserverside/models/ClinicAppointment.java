@@ -24,6 +24,9 @@ public class ClinicAppointment {
     @Column(name = "description")
     private String infodesc;
 
+    @Column(name = "date")
+    private String date;
+
     @Column(name = "appointment_date")
     private LocalDateTime appointmentDate;
 }
