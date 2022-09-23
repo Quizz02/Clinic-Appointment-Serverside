@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:4200/", maxAge = 1800)
-@RequestMapping("/clinicappointments")
+@CrossOrigin(origins = "http://localhost:4200/", maxAge = 3600)
+@RequestMapping({"/api/clinicappointments"})
 public class ClinicAppointmentController {
 
     @Autowired
