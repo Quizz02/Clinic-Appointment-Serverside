@@ -3,7 +3,7 @@ package com.example.clinicappointmentserverside.models;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -22,8 +22,8 @@ public class ClinicAppointment {
     private String specialty;
 
     @Column(name = "description")
-    private String description;
+    private String infodesc;
 
     @Column(name = "appointment_date")
-    private Date appointmentDate;
+    private LocalDateTime appointmentDate;
 }
